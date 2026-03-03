@@ -1,14 +1,15 @@
 var string = ''
-for(var i = 0; i < 10 ; i++){
-    for(var j = 0; j <= i ; j++){
-        string = string + '#'
-    } 
-    string = string + '\n'
+var tinggi = 7
+
+for ( var i = 1 ; i <= tinggi ; i++){
+//spasi
+    for (var k = tinggi ; k > i ; k--){
+        string += " "
+    }
+// pagar
+    for (var j = 1 ; j <= (2 * i - 1 ); j++){
+    string += "#"
 }
-for(var i = 10; i > 0 ; i--){
-    for(var j = 0; j < i ; j++){
-        string = string + '#'
-    } 
-    string = string + '\n'
+    string += '\n'
 }
-console.log(string)
+console.log (string)
