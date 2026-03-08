@@ -3,7 +3,7 @@ var konfirmasi = confirm(namaPlayer + " mau main gak?")
 var konfirmasi = konfirmasi
 while (konfirmasi == true){
  // Inputan user
-    var player = prompt('Pilih lah salah satu diantara tiga hewan ini ' + namaPlayer + '! : Gajah, Semut, Orang')
+    var player = prompt('Pilih lah salah satu diantara tiga ini ' + namaPlayer + '! : Gajah, Semut, Orang')
     // Inputan komputer sendiri
     var comp = Math.random()
         
@@ -27,7 +27,7 @@ while (konfirmasi == true){
         // }
         hasil = (comp == 'Semut') ? 'Kalah' : 'Menang'
     }else if (player == 'Orang'){
-        hasil = (comp == 'Gajah') ? 'Kalah' : 'Semut'
+        hasil = (comp == 'Gajah') ? 'Kalah' : 'Menang'
     }else if (player == 'Semut'){
         hasil = (comp == 'Gajah') ? 'Menang' : 'Kalah'
     }else{
