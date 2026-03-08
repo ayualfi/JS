@@ -1,25 +1,16 @@
 var string = ''
 var tinggi = 4
-var a = 0
-var b = 1
 
-for (var x = 1 ; x <= tinggi ; x++){
-    for (var k = tinggi ; k > x ; k--){
-        string += ' '
-    }
-    for (var i = 0 ; i < x ; i++){
-        string += (b)
-        var c = a + b
-        a = b
-        b = c
-        if (i != x-1){
-            string += ' '
+for (var x = 0 ; x <= tinggi ; x++){
+    for (var k = 0 ; k <= x ; k++){
+        if (k == 0 || k == x ){
+            string += 1
+        }else{
+            string += 2
         }
-        
     }
     string += '\n'
 }
-
 console.log(string)
 
 
