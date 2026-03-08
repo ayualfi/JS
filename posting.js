@@ -1,0 +1,5 @@
+console.log("Ayu")
+console.log('Ayu')
+console.log("jum'at")
+console.log('Ayu Alfi dipanggil "Ayu"')
+console.log("Ayu Alfi yang dipanggil \"Ayu\" pergi ke indomaret hari jum'at")
