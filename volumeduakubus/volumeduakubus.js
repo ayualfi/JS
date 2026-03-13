@@ -14,8 +14,8 @@ function menghitungTotalVolumeDuaKubus (a, b){
     return total
 }
 
-a=prompt('Berapa sisi kubus 1 = ')
-b=prompt('Berapa sisi kubus 2 = ')
+a=parseInt(prompt('Berapa sisi kubus 1 = '))
+b=parseInt(prompt('Berapa sisi kubus 2 = '))
 
 alert('Total volume kedua kubus '+namaPlayer + ' = '+menghitungTotalVolumeDuaKubus(a, b))
 konfirmasi=confirm('Mau menghitung total volume kedua kubus lagi '+namaPlayer+' ?')
