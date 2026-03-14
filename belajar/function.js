@@ -46,3 +46,4 @@ function nambah(){
 }
 var coba = nambah(1, 2, 3, 4)
 console.log(coba)
+ //////

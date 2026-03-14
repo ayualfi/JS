@@ -3,15 +3,7 @@ var konfirmasi = confirm('Halo ' + namaPlayer + '\nKamu mau menghitung total vol
 
 while (konfirmasi==true){
 function menghitungTotalVolumeDuaKubus (a, b){
-    var volumeKubusA
-    var volumeKubusB
-    var total
-
-    volumeKubusA = a * a * a
-    volumeKubusB = b * b * b
-    total = volumeKubusA + volumeKubusB
-
-    return total
+    return a * a * a + b * b * b
 }
 
 a=parseInt(prompt('Berapa sisi kubus 1 = '))
