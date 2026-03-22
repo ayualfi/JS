@@ -24,7 +24,7 @@
 // }
 
 // Property dan Method untuk array
-var contoh = ['Ayu', 'Alfi', 'Faris', 'Tiandika']
+// var contoh = ['Ayu', 'Alfi', 'Faris', 'Tiandika']
 
 // 1. .length ==> properti tanpa () (Menghitung banyaknya elemen di dalam array)
 // console.log(contoh.length)
@@ -58,9 +58,38 @@ var contoh = ['Ayu', 'Alfi', 'Faris', 'Tiandika']
 
 // f. .slice ==> (Mengiris) Menambah array dari array
 // rumus ==> variabel.slice(indexAwal(akan terbawa), indexAkhir(tidak terbawa))
-var contoh2 = contoh.slice(3)
-console.log(contoh2.join(' - '))
+// var contoh2 = contoh.slice(3)
+// console.log(contoh2.join(' - '))
 
+// g. .forEach(Pengulangan khusus array yang diisi dengan fungction) ==> tidak mengembalikan nilai
+var contoh3 = [1, 8, 3, 2, 5, 6, 7, 'Tian', 'Alfi']
+// contoh3.forEach(function(e){
+//     console.log(e)
+// })
+// // atau
+// var fung1 = function(e){
+//     console.log(e)
+// }
+// console.log(contoh3.forEach(fung1))
 
+// h. Map ==> method untk looping array yang bisa mengembalikan nilai
+// var coba = contoh3.map(function(e){
+//     return e * 2
+// })
+// console.log(coba.join( ' - '))
 
+// i. .sort ==> mengurutkan element array
+// contoh3.sort()
+// console.log(contoh3.join( ' - '))
 
+// j. .filter ==> Mengambil beberapa elemt dalam array menggunakan function
+var contoh4 = contoh3.filter(function(x){
+    return x > 1
+})
+console.log(contoh4.join( ' - '))
+
+// k. .find ==> mengambil satu nilai saja
+var contoh5 = contoh3.find(function(y){
+    return y > 1
+})
+console.log(contoh5)
