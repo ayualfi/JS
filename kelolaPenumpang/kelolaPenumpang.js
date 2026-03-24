@@ -41,6 +41,7 @@ var tambahPenumpang = function(namaPenumpang, penumpang){
 }
 }
 
+// Tempat input penumpang
 tambahPenumpang('alfi',penumpang)
 tambahPenumpang('ayu',penumpang)
 tambahPenumpang('ayu',penumpang)
