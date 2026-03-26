@@ -1,4 +1,4 @@
-var penumpang = ['Ayu', undefined, 'Hidayati']
+var penumpang = ['Ayu', 'Alfi']
 var tambahPenumpang = function(namaPenumpang, penumpang){
     // jika angkot kursi kosong
     if (penumpang.length == 0){
@@ -29,6 +29,38 @@ var tambahPenumpang = function(namaPenumpang, penumpang){
             penumpang.push(namaPenumpang)
             // kembalikan isi array dan program berakhir
             return penumpang
+        }
+    }
+}
+
+var hapusPenumpang = function(namaPenumpang, penumpang){
+    // Jika angkot kosong
+    if (penumpang.length == 0){
+        // tampilkan pesan
+        console.log('Angkot masih kosong')
+        // tidak mungkin ada penumpang turun
+        // kembalikan isi array dan keluar dari function
+        return penumpang
+    }
+    // else
+    else{
+        // telusuri kursi
+        for (var j = 0 ; j < penumpang.length ; j++){
+            // jika nama penumpang sesuai
+            if (penumpang[j] === namaPenumpang){
+                // hapus penumpang dengan mengubah
+                // namanya menjadi undefined
+                penumpang[j] = undefined
+                // kembalikan isi array
+                return penumpang
+            }
+            // jika tidak ada nama yang sesuai
+            else if(j == penumpang.length - 1){
+                // tampilkan pesan kesalahan
+                console.log('Tidak ada penumpang dengan nama ' + namaPenumpang)
+                // kembalikan isi array dan keluar dari function
+                return penumpang
+            }
         }
     }
 }
