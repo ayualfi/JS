@@ -1,4 +1,4 @@
-var penumpang = ['Ayu', 'Alfi']
+var penumpang = ['Ayu', 'Alfi', 'Tian']
 var tambahPenumpang = function(namaPenumpang, penumpang){
     // jika angkot kursi kosong
     if (penumpang.length == 0){
