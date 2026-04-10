@@ -34,7 +34,8 @@
 
 
 // === part 2 ======
-// document.createElement
+// document.createElement 
+// append child
 
 // buat element baru
 const pBaru = document.createElement('p')
@@ -45,4 +46,34 @@ pBaru.appendChild(textPBaru)
 const p = document.getElementsByClassName('sel1')[0]
 p.appendChild(pBaru)
 
+// =============================
+// document.createElement dan 
+// insertBefore
 
+const liBaru = document.createElement('li')
+const teksLiBaru = document.createTextNode('Item baru')
+liBaru.appendChild(teksLiBaru)
+
+const lu = document.querySelector('section#s2 ul')
+const liB = lu.querySelector('li:nth-child(2)')
+lu.insertBefore(liBaru, liB)
+
+// ==========
+const p1Section2 = document.createElement('p')
+const textp1Section2 = document.createTextNode('Paragraf baru di section 2')
+p1Section2.appendChild(textp1Section2)
+
+const section = document.getElementById('s2')
+const pSection2 = section.getElementsByTagName('p')[0]
+section.insertBefore(p1Section2, pSection2)
+
+// document.removeChild
+const p2 = p.getElementsByTagName('p')[1]
+p.removeChild(p2)
+
+// replaceChild
+const h2 = document.createElement('h2')
+const textH2 = document.createTextNode('Judul baru')
+h2.appendChild(textH2)
+
+section.replaceChild(h2, pSection2)
