@@ -34,10 +34,34 @@
         font-size:medium;
         border:2px solid white; 
     }
+    .kotak{
+        width: 25px;
+        height: 25px;
+        margin: 10px auto;
+        border: 2px solid;
+    }
+    .merah{
+        background-color: red;
+    }
+    .hijau{
+        background-color: green;
+    }
+    .biru{
+        background-color: blue;
+    }
 </style>
 <body>
-    <h1>Bermain dengan warna</h1>
+    <h1>Bermain warna untuk background halaman</h1>
     <button type="button" id="ubahWarnaBg">Ubah Warna Bg</button>
+    <br><br>
+    <div class="kotak merah"></div>
+    <input type="range" name="sliderMerah" min="0" max="255">
+    <div class="kotak hijau"></div>
+    <input type="range" name="sliderhijau" min="0" max="255">
+    <div class="kotak biru"></div>
+    <input type="range" name="sliderbiru" min="0" max="255">
+
+
     <script src="mainWarna.js"></script>
 </body>
 </html>
