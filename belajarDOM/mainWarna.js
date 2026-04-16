@@ -36,6 +36,15 @@ for (i = 0 ; i < slider.length ; i++){
 }
 
 
-document.body.addEventListener('mousemove',function(){
+document.body.addEventListener('mousemove',function(event){
+    // posisi.mouse
+    // console.log(event.clientX)
+    // ukuran browser
+    // console.log(window.innerWidth)
+    const posx = Math.round((event.clientX / window.innerWidth)*255)
+    const posy = Math.round((event.clientY / window.innerWidth)*255)
+    
+    document.body.style.backgroundColor = 'rgb('+ posx +', '+ posy +', 100)'
+
 })
 
