@@ -1,7 +1,7 @@
 * {
     border: 2px solid #ebeae8;
-    margin: 15px;
-    padding: 15px;
+    margin: 0;
+    padding: 0;
 }
 h1{
     display: flex;
@@ -10,8 +10,8 @@ h1{
     height: 20px;
 }
 img{
-    width: 128px;
-    height: 128px;
+    width: 25%;
+    height: auto;
     transition: transform 0.3s ease;
 }
 .kotakPlayer img:hover{
@@ -22,8 +22,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
-    width: 300px;
+    width: 80%;
     background-color: #fcb23a;
     border: solid 2px black;
     border-radius: 25px;
@@ -34,22 +33,23 @@ img{
 } */
 .kotakPlayer{
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    height: 150px;
-    width: 600px;
+    width: 90%;
+    max-width: 600px;
     margin: 20px auto;
     background-color:#ab6900 ;
     border: solid 2px black;
     border-radius: 25px;
+    gap: 10px;
 
  }
  .kotakPenentu{
     background-color: black;
     display: flex;
     justify-content: center;
-    height: 30px;
-    width: 150px;
+    width: 50%;
     margin: 20px auto;
     border-radius: 25px;
     border: solid 2px ;
