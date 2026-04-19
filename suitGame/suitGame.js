@@ -47,11 +47,32 @@ pilihanPlayer.forEach(function(pilihan){
         const pilihanPlayer = pilihan.className
         const hasil = getHasil(pilihanKomputer, pilihanPlayer)
 
-        const gambarKomputer = document.querySelector('.comp')
-        gambarKomputer.setAttribute('src', 'assets/' + pilihanKomputer + '.png')
+        putar()
 
-        const tampilkanHasil = document.querySelector('.kotakPenentu')
-        tampilkanHasil.innerHTML = hasil
+        setTimeout(function(){
+            const gambarKomputer = document.querySelector('.comp')
+            gambarKomputer.setAttribute('src', 'assets/' + pilihanKomputer + '.png')
+
+            const tampilkanHasil = document.querySelector('.kotakPenentu')
+            tampilkanHasil.innerHTML = hasil
+        }, 1000)
+
+        
     })
 })
+
+function putar (){
+    const gambarKom = document.querySelector('.comp')
+    const gambar = ['batu', 'gunting', 'kertas']
+    let i = 0
+    const waktumulai = new Date().getTime()
+    setInterval(function(){
+        if (new Date().getTime() - waktumulai > 1000){
+            clearInterval;
+            return
+        }
+        gambarKom.setAttribute('src', 'assets/' + gambar [i++] + '.png')
+        if (i==gambar.length) i = 0
+    }, 100)
+}
 
