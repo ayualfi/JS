@@ -9,8 +9,8 @@ body{
     border: solid 0px;
     border-radius: 50px;
     background-color: lightskyblue;
-    margin: 2px 2px;
-    padding: 0 40px 0 0;
+    margin: 10px 2px;
+    padding: 0 30px 0 0;
     overflow: hidden;
 }
 .card:hover{
@@ -26,12 +26,12 @@ body{
     display: block;
     text-align: left;
     margin-left: 20px;
+    margin-right: 20px;
 }
 .x{
     display: flex;
     align-items: center;
     margin-left: auto;
-    margin-left: 20px;
     font-size: larger;
     font-weight: bold;
     cursor: pointer;
