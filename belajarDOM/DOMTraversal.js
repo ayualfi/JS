@@ -12,7 +12,8 @@
 const tombolHapus = document.querySelectorAll('.x')
 
 for( let i = 0 ; i < tombolHapus.length ; i++){
-    tombolHapus[i].addEventListener('click', function(){
-        tombolHapus[i].parentElement.style.display = 'none'
+    tombolHapus[i].addEventListener('click', function(e){
+        // tombolHapus[i].parentElement.style.display = 'none'
+        console.log(e)
     }) 
 }
