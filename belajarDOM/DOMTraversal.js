@@ -10,4 +10,9 @@
 // menggunakan dom traversal
 
 const tombolHapus = document.querySelectorAll('.x')
-const kontakCard = document.querySelectorAll('.card')
+
+for( let i = 0 ; i < tombolHapus.length ; i++){
+    tombolHapus[i].addEventListener('click', function(){
+        tombolHapus[i].parentElement.style.display = 'none'
+    }) 
+}
