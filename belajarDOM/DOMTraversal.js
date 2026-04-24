@@ -9,11 +9,24 @@
 
 // menggunakan dom traversal
 
-const tombolHapus = document.querySelectorAll('.x')
+// menggunakan perulangan for
+// const tombolHapus = document.querySelectorAll('.x')
 
-for( let i = 0 ; i < tombolHapus.length ; i++){
-    tombolHapus[i].addEventListener('click', function(e){
-        // tombolHapus[i].parentElement.style.display = 'none'
-        console.log(e)
-    }) 
-}
+// for( let i = 0 ; i < tombolHapus.length ; i++){
+//     tombolHapus[i].addEventListener('click', function(e){
+//         // tombolHapus[i].parentElement.style.display = 'none'
+//     e.target.parentElement.style.display = 'none'
+//     }) 
+// }
+
+// menggunakan perulangan forEach
+// tombolHapus.forEach(function(el){
+//     el.addEventListener('click', function(e){
+//         e.target.parentElement.style.display = 'none'
+//     })
+// })
+
+// mencoba method pada DOM Traversal
+const nama = document.querySelector('.nama')
+const nomer = document.querySelector('.nomer')
+console.log(nomer.previousElementSibling)
