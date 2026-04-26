@@ -10,7 +10,7 @@
 // menggunakan dom traversal
 
 // menggunakan perulangan for
-// const tombolHapus = document.querySelectorAll('.x')
+const tombolHapus = document.querySelectorAll('.x')
 
 // for( let i = 0 ; i < tombolHapus.length ; i++){
 //     tombolHapus[i].addEventListener('click', function(e){
@@ -20,13 +20,14 @@
 // }
 
 // menggunakan perulangan forEach
-// tombolHapus.forEach(function(el){
-//     el.addEventListener('click', function(e){
-//         e.target.parentElement.style.display = 'none'
-//     })
-// })
+tombolHapus.forEach(function(el){
+    el.addEventListener('click', function(e){
+        e.target.parentElement.style.display = 'none'
+        e.preventDefault()
+    })
+})
 
 // mencoba method pada DOM Traversal
-const nama = document.querySelector('.nama')
-const nomer = document.querySelector('.nomer')
-console.log(nomer.previousElementSibling)
+// const nama = document.querySelector('.nama')
+// const nomer = document.querySelector('.nomer')
+// console.log(nomer.previousElementSibling)
