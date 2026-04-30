@@ -1,4 +1,29 @@
-.container{
-    width: 50%;
-    height: 70%;
+*{
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
 }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    max-width: 400px;
+    width: 50%;
+    height: 70vh;
+}
+.thumbnail{
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    gap: 5px; 
+    
+}
+.thumbnail img{
+    object-fit: cover
+}
+/* img{
+    height: 100%;
+    width: 100%;
+} */
